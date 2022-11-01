@@ -6,6 +6,10 @@ namespace Ovn1
     {
         static void Main(string[] args)
         {
+            // 1. Skulle ha använt dictionary för att samla ID, Förnamn, Efternamn, lön.
+            // 2. En metod för att lägga till ny anställd. En metod för att uppdatera anställd.
+
+
 
 
             string[] namn = new string[] { "Olle Karlsson 10 000kr", "Anna Jansson 15 000kr", "Kalle Svenson 20 000kr" };
