@@ -33,7 +33,8 @@ namespace Ovn1
                 if (val == 1)
                 {
                     Console.WriteLine("Lägg till anställd och lön");
-                    namn[].Append("Sten stensson 30 000kr");
+                    string appendEmployee = Console.ReadLine(); 
+                    string[] result = namn.Append(addEmployee);
                  
                 }
                 else if (val == 2)
