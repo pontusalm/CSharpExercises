@@ -48,9 +48,6 @@ namespace Ovn1
                     Console.WriteLine("Du har inte angett giltigt tal");
 
 
-                //char[] characterArray = message.ToCharArray();
-                //Array.Reverse(characterArray);
-                //return String.Concat(characterArray);
 
 
 
