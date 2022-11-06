@@ -16,7 +16,6 @@ namespace Ovn1
             
 
             bool admin = true;
-            Console.WriteLine(admin);
 
             while (admin == true)
             {
@@ -33,8 +32,10 @@ namespace Ovn1
                 if (val == 1)
                 {
                     Console.WriteLine("Lägg till anställd och lön");
-                    string addEmployee = Console.ReadLine(); 
-                    string[] result = (string[])namn.Append(addEmployee);
+                    string addEmployee = Console.ReadLine();
+                    Console.WriteLine(addEmployee);
+                    string[] result = namn.Append(addEmployee);
+                    Console.WriteLine(result);  
 
                 }
                 else if (val == 2)
