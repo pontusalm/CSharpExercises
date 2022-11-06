@@ -33,16 +33,18 @@ namespace Ovn2
                             Console.WriteLine("Du vill köpa enkelbiljett");
                             Console.WriteLine("Ange din ålder");
                             int age = Convert.ToInt32(Console.ReadLine());
-
+                            int priceSingelTicket = CalculatePriceForTicket(age);
+                            
                             if (age < 20)
-                                Console.WriteLine("Ungdomspris: 80kr"); 
+                            Console.WriteLine($"Ungdomspris {priceSingelTicket} kr");
                             else if (age > 65)
-                                Console.WriteLine("Pensionärspris 90kr");
+                            Console.WriteLine($"Pensionärspris {priceSingelTicket} kr");
                             else if (age >= 20 && age <= 65)
-                                Console.WriteLine("Standardpris 120kr");
+                            Console.WriteLine($"Standardpris {priceSingelTicket} kr");
 
                             else
-                                Console.WriteLine("Ogiltigt val");
+                            Console.WriteLine("Ogiltigt val");
+                            
                         }
                         else if (singelOrGroupTicket == "2")
                         {
@@ -58,13 +60,13 @@ namespace Ovn2
                                 int age = Convert.ToInt32(Console.ReadLine());
                                 int ticketPrice = CalculatePriceForTicket(age);
                                 priceGroupTicket = priceGroupTicket + ticketPrice;
-                                Console.WriteLine($"Biljett nr{i} kostar {ticketPrice}kr");
-                                Console.WriteLine($"Gruppbiljetten kostar {priceGroupTicket}kr");
+                                Console.WriteLine($"Biljett nr{i} kostar {ticketPrice} kr");
+                                Console.WriteLine($"Gruppbiljetten kostar {priceGroupTicket} kr");
                             }
-                            Console.WriteLine("\n***********************************");
+                            Console.WriteLine("\n*****************************************");
                             Console.WriteLine("Tack för din beställning");
                             Console.WriteLine($"Antal personer: {nrOfTickets} stycken");
-                            Console.WriteLine($"Totalkostnad för hela sällskapet: {priceGroupTicket}kr");
+                            Console.WriteLine($"Totalkostnad för hela sällskapet: {priceGroupTicket} kr");
 
                         }
                         else
