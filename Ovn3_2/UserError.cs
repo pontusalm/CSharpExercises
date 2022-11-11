@@ -4,14 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ovn3
+namespace Ovn3_2
 {
     internal abstract class UserError
     {
         public abstract string UEMessage();
-
-
-
 
     }
 }

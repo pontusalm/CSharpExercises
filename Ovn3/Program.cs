@@ -26,6 +26,8 @@
             {
                 var person2 = ph.CreatePerson(30, "Peter", "Karlsson", 172.3, 75.6);
                 ph.SetAge(person2, 14);
+                ph.SetWeight(person2, 110);
+                ph.SetLname(person2, "Fransen");
 
                 Console.WriteLine(person2.Age);
                 Console.WriteLine(person2.FName);
