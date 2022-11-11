@@ -4,14 +4,23 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Ovn3_3
 {
     internal class Horse : Animal
     {
 
-        public Horse CreateHorse(string name, int weight, int age)
+        private string runner;
+
+        public string Runner
         {
+            get { return runner; }
+            set { runner = value; }
+        }
+
+        public Horse CreateHorse(string name, int weight, int age, string runner)
+        { 
             var newHorse = new Horse();
             newHorse.Name = name;
             newHorse.Weight = weight;
@@ -27,3 +36,5 @@ namespace Ovn3_3
 
     }
 }
+
+
