@@ -10,7 +10,7 @@
             {
                 if (value < 1)
                 {
-                    throw new ArgumentException("Age must be a positive integer.");
+                    throw new ArgumentException("Age must be a positive integer. ");
                 }
                 age = value;
             }
