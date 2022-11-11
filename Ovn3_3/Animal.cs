@@ -31,7 +31,8 @@ namespace Ovn3_3
             set { age = value; }
         }
 
-        public abstract void DoSound();
+        public virtual void DoSound()
+        {Console.WriteLine("wow wow");}
 
 
     }

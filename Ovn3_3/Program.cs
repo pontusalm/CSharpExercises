@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Horse horse2 = new Horse();
+            Horse horse1 = horse2;
+            Horse horse = horse1;
+            horse.DoSound();
+
+            Console.ReadLine();
         }
     }
 }
