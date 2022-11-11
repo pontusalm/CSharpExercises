@@ -24,14 +24,31 @@
 
             try
             {
-                var person = ph.CreatePerson(30, "Peter", "Karlsson", 172.3, 75.6);
-                //ph.SetAge(person, 14);
+                var person2 = ph.CreatePerson(30, "Peter", "Karlsson", 172.3, 75.6);
+                ph.SetAge(person2, 14);
 
-                Console.WriteLine(person.Age);
-                Console.WriteLine(person.FName);
-                Console.WriteLine(person.LName);
-                Console.WriteLine(person.Height);
-                Console.WriteLine(person.Weight);
+                Console.WriteLine(person2.Age);
+                Console.WriteLine(person2.FName);
+                Console.WriteLine(person2.LName);
+                Console.WriteLine(person2.Height);
+                Console.WriteLine(person2.Weight);
+        }
+
+            catch (ArgumentException errorCatch)
+            {
+                Console.WriteLine(errorCatch.Message);
+            }
+
+            try
+            {
+                var person3 = ph.CreatePerson(30, "Jonas", "Svensson", 152, 48);
+
+                Console.WriteLine("");
+                Console.WriteLine(person3.Age);
+                Console.WriteLine(person3.FName);
+                Console.WriteLine(person3.LName);
+                Console.WriteLine(person3.Height);
+                Console.WriteLine(person3.Weight);
             }
 
             catch (ArgumentException errorCatch)
@@ -40,6 +57,7 @@
             }
 
 
-            }
+
+        }
     }
 }
