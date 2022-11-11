@@ -4,10 +4,18 @@
     {
         static void Main(string[] args)
         {
-            Horse horse2 = new Horse();
-            Horse horse1 = horse2;
-            Horse horse = horse1;
-            horse.DoSound();
+            
+            Horse horse1 = new Horse();
+            horse1.DoSound();
+            
+          
+            
+                
+                
+                
+            //    Animal animal1 = new();
+            //animal1.DoSound();
+
 
             Console.ReadLine();
         }

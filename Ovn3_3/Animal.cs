@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ namespace Ovn3_3
     internal abstract class Animal
     {
         private string name;
-        private string weight;
+        private int weight;
         private int age;
 
 
@@ -19,7 +20,7 @@ namespace Ovn3_3
             set { name = value; }
         }
 
-        public string Weight
+        public int Weight
         {
             get { return weight; }
             set { weight = value; }
