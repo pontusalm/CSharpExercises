@@ -53,10 +53,6 @@ namespace Ovn1
                 else
                     Console.WriteLine("Du har inte angett giltigt tal");
 
-
-
-
-
             }
 
 
