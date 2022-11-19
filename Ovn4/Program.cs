@@ -267,18 +267,18 @@
                             }
                         }
                         if (parenthesesUnbalanced == true)
-                        { Console.WriteLine("Parentheses are unbalanced"); }
+                        { Console.WriteLine("\t Parentheses are unbalanced"); }
 
                         else if (NormalParentheses == 0 && CurlyParentheses == 0 && SquareParentheses == 0)
                         {
-                            Console.WriteLine("Parentheses are balanced");
+                            Console.WriteLine("\t Parentheses are balanced");
                         }
-                        else Console.WriteLine("Parentheses are unbalanced");
+                        else Console.WriteLine("\t Parentheses are unbalanced");
 
                         break;
 
                     case '0':
-                        Console.WriteLine("\nBack to main menu chosen\n");
+                        Console.WriteLine("\n\t Back to main menu chosen\n");
                         return;
                     default:
                         Console.WriteLine("");
