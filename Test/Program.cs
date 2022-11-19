@@ -13,6 +13,9 @@
             ////multiple Strings
             //string line = "Hello world this is a test";
 
+            Object myObject = new Object();
+            myObject.Equals(null);
+
             Console.WriteLine("Ange hur många biljetter du önskar köpa");
             int nrOfTickets = Convert.ToInt32(Console.ReadLine());
             int priceGroupTicket = 0;

@@ -239,28 +239,28 @@
                         Console.WriteLine("\n \t Enter a string with some parentheses:");
                         Console.Write("\t "); string text2 = Console.ReadLine();
 
-                        int NP = 0;
-                        int CP = 0;
-                        int SP = 0;
+                        int NormalParentheses = 0;
+                        int CurlyParentheses = 0;
+                        int SquareParentheses = 0;
                         bool parenthesesUnbalanced = false;
                         foreach (var c in text2)
                         {
                             if (c.Equals('('))
-                            { NP = NP + 1; }
+                            { NormalParentheses = NormalParentheses + 1; }
                             else if (c.Equals(')'))
-                            { NP = NP - 1; }
+                            { NormalParentheses = NormalParentheses - 1; }
 
                             else if (c.Equals('{'))
-                            { CP = CP + 1; }
+                            { CurlyParentheses = CurlyParentheses + 1; }
                             else if (c.Equals('}'))
-                            { CP = CP - 1; }
+                            { CurlyParentheses = CurlyParentheses - 1; }
 
                             else if (c.Equals('['))
-                            { SP = SP + 1; }
+                            { SquareParentheses = SquareParentheses + 1; }
                             else if (c.Equals(']'))
-                            { SP = SP - 1; }
+                            { SquareParentheses = SquareParentheses - 1; }
 
-                            if (NP < 0 || CP < 0 || SP < 0)
+                            if (NormalParentheses < 0 || CurlyParentheses < 0 || SquareParentheses < 0)
                             {
                                 parenthesesUnbalanced = true;
                                 break;
@@ -269,7 +269,7 @@
                         if (parenthesesUnbalanced == true)
                         { Console.WriteLine("Parentheses are unbalanced"); }
 
-                        else if (NP == 0 && CP == 0 && SP == 0)
+                        else if (NormalParentheses == 0 && CurlyParentheses == 0 && SquareParentheses == 0)
                         {
                             Console.WriteLine("Parentheses are balanced");
                         }
