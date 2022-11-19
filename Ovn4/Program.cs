@@ -275,8 +275,6 @@
                         }
                         else Console.WriteLine("Parentheses are unbalanced");
 
-                        //Console.WriteLine($"NP={NP}, Cp={CP}, SP={SP}");
-
                         break;
 
                     case '0':
